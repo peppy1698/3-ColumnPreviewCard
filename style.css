@@ -1,0 +1,239 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY CODE */
+
+html {
+	box-sizing: border-box;
+	font-family: 'Lexend Deca', sans-serif;
+}
+body {
+	background-color: hsl(0, 0%, 95%);
+	display: flex;
+	justify-content: center;
+
+	min-height: 100vh;
+}
+.main {
+	width: 100%;
+	max-width: 1060px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 95px 40px;
+}
+
+.cars1 {
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 10px 10px 0 0;
+	padding: 50px 35px;
+	display: inline-block;
+}
+.cars2 {
+	background-color: hsl(184, 100%, 22%);
+	border-radius: 0;
+	padding: 50px 35px;
+	display: inline-block;
+}
+.cars3 {
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 0 10px 10px;
+	padding: 50px 35px;
+	display: inline-block;
+}
+
+.car_img {
+	display: flex;
+	align-items: flex-start;
+	max-width: 100%;
+	margin-left: 20px;
+}
+.car_header {
+	font-family: 'Big Shoulders Display', cursive;
+	color: hsl(0, 0%, 95%);
+	font-size: 40px;
+	letter-spacing: 1px;
+	font-weight: 200;
+	text-align: start;
+	padding: 40px 0 25px 0;
+	margin-left: 20px;
+}
+.car_features {
+	font-family: 'Lexend Deca', sans-serif;
+	color: hsla(0, 0%, 100%, 0.75);
+	text-align: start;
+	line-height: 1.5;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+button {
+	border: 0 solid hsl(0, 0%, 95%);
+	padding: 17px 30px;
+	border-radius: 50px;
+	margin: 40px 0 20px 20px;
+	display: flex;
+	justify-content: start;
+}
+button:hover,
+button:focus {
+	background-color: rgb(199, 196, 196);
+	text-shadow: darkgrey;
+}
+.cars1 button {
+	color: hsl(31, 77%, 52%);
+}
+.cars2 button {
+	color: hsl(184, 100%, 22%);
+}
+.cars3 button {
+	color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 900px) {
+	.main {
+		flex-direction: row;
+	}
+	.cars1 {
+		border-radius: 10px 0 0 10px;
+	}
+
+	.cars2 {
+		border-radius: 0;
+	}
+
+	.cars3 {
+		border-radius: 0 10px 10px 0;
+	}
+}
+footer {
+	position: fixed;
+	padding: 10px 10px 0px 10px;
+	bottom: 0;
+	width: 100%;
+	/* Height of the footer*/
+	height: 40px;
+	background: rgb(230, 206, 206);
+}
